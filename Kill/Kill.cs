@@ -250,7 +250,7 @@ namespace Kill
         {
             ToggleMessage toggleMessage = message as ToggleMessage;
             if (toggleMessage != null)
-                IsEnabled = true;
+                IsEnabled = toggleMessage.IsEnabled;
         }
 
         private void OnConfigUpdateMessage(int sender, IPCMessage message)
